@@ -6,3 +6,4 @@ git branch -d <branchname> = delete a branch
 git switch -c <branchname> = create a new branch
 git push -u origin <branchname> = push the changes and the new branch
 git pull = pull to your local machine from github
+git branch -d [branch-name] = delete specified branch
