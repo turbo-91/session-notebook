@@ -4,3 +4,5 @@ git commit -m "Message Mustermann" = to commit changes including commit message
 git status = find out if changes are to be committed, if files are untracked etc.
 git log = to see log / history of commits
 git log --oneline = to see log / history of commits in one line
+git push = push to github
+git pull = pull from github
