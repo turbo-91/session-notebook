@@ -1,0 +1,49 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+}
+
+/* box-sizing erspart das Zuammenrechnen von padding und border und margin */
+
+body {
+  background-color: #b3c8cf;
+}
+
+h1,
+h2,
+p {
+  color: #e5ddc5;
+}
+
+/*  */
+
+nav,
+footer {
+  background-color: #f1eedc;
+}
+
+/* if you put width AND height then the image adapts (nochmal überprüfen) */
+/* border-radius: abgerundete Ecken */
+.hermione-img {
+  width: 200px;
+  border-radius: 12px;
+}
+
+/* THERE IS CASCADING HIERARCHY, SO THESE SECTIONS HAVE TO BE IN THE RIGHT ORDER FOR BOTH CHANGES TO BE APPLIED */
+/* we usually don't use id="" bzw. # for styling because it overrides everything, it overrides the cascading hierarchy */
+
+#about-section {
+  background-color: chocolate;
+}
+
+.section {
+  background-color: #bed7dc;
+}
+
+.hermione-section {
+  background-color: white;
+}
+
+.hermione-section p {
+  color: #b3c8cf;
+}
