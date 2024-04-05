@@ -1,0 +1,122 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-dark-color: #01937c;
+  --primary-color: #01937c;
+  --secondary-color: #faf1e6;
+  --font-color: #ffc074;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--primary-dark-color);
+}
+
+#quotes-container {
+  width: 90%;
+  margin: 0 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  justify-items: center;
+}
+
+.quote {
+  margin: 10px 15px;
+  margin-right: 0px;
+  border-radius: 12px;
+  border: 3px solid var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px;
+  color: var(--secondary-color);
+  font-size: 42px;
+}
+
+h2,
+p {
+  text-align: center;
+  padding: 10px 15px;
+  margin: 10px 0px;
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: small;
+}
+
+h2 {
+  color: var(--font-color);
+  font-weight: 500;
+  font-style: italic;
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --primary-dark-color: #012893;
+    --primary-color: #280193;
+    --secondary-color: #000000;
+    --font-color: #ff7474;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --primary-dark-color: rgba(190, 218, 255, 0.8);
+    --primary-color: #930189;
+    --secondary-color: #004917;
+    --font-color: #ffff24;
+  }
+
+  #quotes-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #quotes-container .quote {
+    border: 5px dotted var(--secondary-color);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --primary-dark-color: #012893;
+    --primary-color: #280193;
+    --secondary-color: #000000;
+    --font-color: #ff7474;
+  }
+  .quote {
+    border: 5px dotted var(--font-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-dark-color: rgba(61, 85, 117, 0.8);
+    --primary-color: #41003d;
+    --secondary-color: #004917;
+    --font-color: #828200;
+  }
+}
+
+@media screen and (min-width: 800px) and (prefers-color-scheme: dark) {
+  :root {
+    --primary-dark-color: rgba(255, 0, 106, 0.8);
+    --primary-color: #dce300;
+    --secondary-color: #490013;
+    --font-color: #ffff88;
+  }
+}

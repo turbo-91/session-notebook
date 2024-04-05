@@ -1,0 +1,25 @@
+* {
+  background-color: whitesmoke;
+  box-sizing: border-box;
+}
+
+ul {
+  font-size: 2rem;
+}
+
+li {
+  font-size: 1rem;
+}
+
+.square-big {
+  width: 50vw;
+  height: 200px;
+  background-color: blue;
+}
+
+.square-small {
+  width: 50%;
+  min-width: 200px;
+  height: 200px;
+  background-color: fuchsia;
+}
